@@ -1,19 +1,26 @@
 {
-    "name": "amrdevac/datatojson",
-    "description": "export data on table to json file",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "amrdevac",
-            "email": "amrullahdev@yahoo.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Amrdevac\\Datatojson\\": "src/"
-        }
+  "name": "amrdevac/datatojson",
+  "description": "export data on table to json file",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "amrdevac",
+      "email": "amrullahdev@yahoo.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Amrdevac\\Datatojson\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Amrdevac\\Datatojson\\ConvertDataServiceProvider"
+      ]
+    }
+  }
 }
