@@ -26,6 +26,7 @@ class ConvertDataServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 ConvertDataCommand::class,
+                ImportConvertedDataCommand::class,
             ]);
         }
     }
