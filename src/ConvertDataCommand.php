@@ -46,7 +46,7 @@ class ConvertDataCommand extends Command
         $this->line(" Your file name would be <bg=blue;>$filename</bg=blue;>");
 
         if (!is_dir($path)) {
-            mkdir($path, 777);
+            mkdir($path, 777, true);
         } else {
             array_map('unlink', glob("$path/*"));
             rmdir($path);
